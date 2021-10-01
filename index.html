@@ -15,7 +15,16 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 
 		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png" />
-		<title>Ivdiana</title>
+		<title>Love for diana</title>
+		<meta name="description" content="加油!才16连败没关系的!">
+        <meta property="og:image" content="https://img.moegirl.org.cn/common/thumb/7/7c/%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg/520px-%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg" />
+		<meta property="og:image:alt" content="关注然然，顿顿解馋！" />
+		<meta property="og:image:width" content="520" /><meta property="og:image:height" content="599" />
+		<meta property="og:site_name" content="DianaS" />
+		<meta property="og:type" content="object" />
+		<meta property="og:title" content="DianaS Domain Home" />
+		<meta property="og:url" content="https://dianas.cyou/" />
+		<meta property="og:description" content="『大家好呀，我是嘉然 Diana！』TOeveryone:换位思考" />    
 	</head>
 	<body>
 		<div class="app-main">
@@ -48,18 +57,20 @@
 			</div>
 			<!---->
 			<script>
-			    var page = Math.floor(Math.random() * 66)
-				fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum='+page+'&timeRangeMode=0&sortMode=0')
+				var page = Math.floor(Math.random() * 66)
+				fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum=' + page + '&timeRangeMode=0&sortMode=0')
 					.then(response => response.json())
-					.then(data => { 
+					.then(data => {
 						// const contents = document.getElementById('data')
 						// 不懂JS的人写JS有多难.PNG
 						var n = Math.floor(Math.random() * 10)
-					    hitokoto.innerText = data["data"]["replies"][n]["content"]+"\nBy -"+data["data"]["replies"][n]["m_name"]
-						})
-					.catch(console.error) 
+						hitokoto.innerText = data["data"]["replies"][n]["content"] + "\nBy -" + data["data"]["replies"][n][
+							"m_name"
+						]
+					})
+					.catch(console.error)
 			</script>
-           <!---->
+			<!---->
 			<div class="mdui-card" id="app-result-card">
 				<div class="mdui-card-content">
 					<div id="app-result">
