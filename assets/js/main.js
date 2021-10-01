@@ -5,9 +5,9 @@ $(document).ready(function() {
 		fixed: true, //是否附着页面底部，否为false
 		autoplay: false, //是否自动播放，否为false,移动端不能生效
 		volume: 0.4, //初始音量（0~1）
-		lrcType: 3, //歌词模式（1、HTML模式 2、js模式 3、lrc文件模式）
+		//lrcType: 3, //歌词模式（1、HTML模式 2、js模式 3、lrc文件模式）
 		mutex: true, //互斥模式：阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
-		order: 'random', //音频循环顺序（'list'：顺序, 'random'：随机）
+		order: 'list', //音频循环顺序（'list'：顺序, 'random'：随机）
 		preload: 'none', //预加载（'none'：不预加载, 'metadata'：元数据, 'auto'：自动）
 		listFolded: false, //列表默认折叠，开启为true
 		theme: '#ee8fdf', //主题颜色
@@ -16,14 +16,14 @@ $(document).ready(function() {
 				artist: 'Kkkengar', //歌曲作者
 				url: './assets/原创小旋律demo嘉然我想对你说.mp3', //歌曲源文件地址
 				cover: 'https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png', //歌曲封面地址
-				//lrc:  'lrc.lrc',        //歌曲的歌词文件
+
 				theme: '#fbc6ff' //主题颜色（优先）
 			}, {
 				name: '嘉然小姐的真心Rap', //歌曲名称
 				artist: '嘉然', //歌曲作者
 				url: './assets/嘉然小姐的真心Rap.mp3', //歌曲源文件地址
 				cover: 'https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png', //歌曲封面地址
-				//lrc:  'lrc.lrc',        //歌曲的歌词文件
+
 				theme: '#ffd3ff' //主题颜色（优先）
 			},
 
@@ -111,3 +111,21 @@ $("#generate-form").submit(function() {
 
 	return false;
 });
+
+
+/*
+			<script>
+				var page = Math.floor(Math.random() * 66)
+				fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum=' + page + '&timeRangeMode=0&sortMode=0')
+					.then(response => response.json())
+					.then(data => {
+						// const contents = document.getElementById('data')
+						// 不懂JS的人写JS有多难.JPG
+						var n = Math.floor(Math.random() * 10)
+						hitokoto.innerText = data["data"]["replies"][n]["content"] + "\nBy -" + data["data"]["replies"][n][
+							"m_name"
+						]
+					})
+					.catch(console.error)
+			</script>
+*/

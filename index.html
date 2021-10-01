@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 
 		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png" />
-        
+
 		<title>Love for diana</title>
 		<meta name="twitter:image:src"
 			content="https://img.moegirl.org.cn/common/thumb/7/7c/%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg/520px-%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg" />
@@ -37,11 +37,12 @@
 
 	</head>
 	<body>
-
+		<!----
+	发现你了哦~
+	---->
 		<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"
-			crossorigin="anonymous">
-		<!--Aplayer--->		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" crossorigin="anonymous">
+		<!--Aplayer--->
 		<div class="app-main">
 			<div class="mdui-card" id="app-form-card">
 				<div class="mdui-card-header">
@@ -70,23 +71,7 @@
 					</form>
 				</div>
 			</div>
-			<!----MISS
-			
-			<script>
-				var page = Math.floor(Math.random() * 66)
-				fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum=' + page + '&timeRangeMode=0&sortMode=0')
-					.then(response => response.json())
-					.then(data => {
-						// const contents = document.getElementById('data')
-						// 不懂JS的人写JS有多难.PNG
-						var n = Math.floor(Math.random() * 10)
-						hitokoto.innerText = data["data"]["replies"][n]["content"] + "\nBy -" + data["data"]["replies"][n][
-							"m_name"
-						]
-					})
-					.catch(console.error)
-			</script>
-			---->
+
 			<div class="mdui-card" id="app-result-card">
 				<div class="mdui-card-content">
 					<div id="app-result">
@@ -102,19 +87,7 @@
 					<a href="//github.com/ASoulCnki/#api">Api By ASoulCnki</a> | Apache-2.0
 					<a href="//diana.wiki">MaterialQuote</a>
 				</div>
-				
 				<div id="aplayer"></div>
-				<script>
-					const ap = new APlayer({
-						container: document.getElementById('aplayer'),
-						audio: [{
-							name: 'A-SOUL原创曲——“无产者的间歇性痉挛”',
-							artist: 'NONE',
-							url: 'https://cloud.dianas.cyou/miao/music/A-SOUL原创曲——“无产者的间歇性痉挛”.mp4.flac',
-							cover: 'https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png'
-						}]
-					});
-				</script>
 			</footer>
 		</div>
 
