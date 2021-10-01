@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 
 		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png" />
+        
 		<title>Love for diana</title>
 		<meta name="twitter:image:src"
 			content="https://img.moegirl.org.cn/common/thumb/7/7c/%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg/520px-%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg" />
@@ -23,7 +24,8 @@
 		<meta name="twitter:title" content="关注然然，顿顿解馋！: DianaS Domain Home|请大家换位思考" />
 		<meta name="twitter:description" content="『大家好呀，我是嘉然 Diana！』" />
 		<meta name="description" content="加油!才16连败没关系的!">
-		<meta property="og:image" content="https://img.moegirl.org.cn/common/thumb/7/7c/%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg/520px-%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg" />
+		<meta property="og:image"
+			content="https://img.moegirl.org.cn/common/thumb/7/7c/%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg/520px-%E5%98%89%E7%84%B6%E5%A4%B4%E5%9B%BE.jpg" />
 		<meta property="og:image:alt" content="关注然然，顿顿解馋！" />
 		<meta property="og:image:width" content="520" />
 		<meta property="og:image:height" content="599" />
@@ -32,8 +34,14 @@
 		<meta property="og:title" content="DianaS Domain Home" />
 		<meta property="og:url" content="https://dianas.cyou/" />
 		<meta property="og:description" content="『大家好呀，我是嘉然 Diana！』TOeveryone:换位思考" />
+
 	</head>
 	<body>
+
+		<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"
+			crossorigin="anonymous">
+		<!--Aplayer--->		
 		<div class="app-main">
 			<div class="mdui-card" id="app-form-card">
 				<div class="mdui-card-header">
@@ -62,7 +70,8 @@
 					</form>
 				</div>
 			</div>
-			<!---->
+			<!----MISS
+			
 			<script>
 				var page = Math.floor(Math.random() * 66)
 				fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum=' + page + '&timeRangeMode=0&sortMode=0')
@@ -77,7 +86,7 @@
 					})
 					.catch(console.error)
 			</script>
-			<!---->
+			---->
 			<div class="mdui-card" id="app-result-card">
 				<div class="mdui-card-content">
 					<div id="app-result">
@@ -91,10 +100,24 @@
 					<a href="https://www.cloudflarestatus.com/">CloudFlare-Shanghai</a> |
 					<a href="//github.com/liyanqwq/jiaran-emulator">RootSource in GitHub</a> | AGPL-v3
 					<a href="//github.com/ASoulCnki/#api">Api By ASoulCnki</a> | Apache-2.0
+					<a href="//diana.wiki">MaterialQuote</a>
 				</div>
+				
+				<div id="aplayer"></div>
+				<script>
+					const ap = new APlayer({
+						container: document.getElementById('aplayer'),
+						audio: [{
+							name: 'A-SOUL原创曲——“无产者的间歇性痉挛”',
+							artist: 'NONE',
+							url: 'https://cloud.dianas.cyou/miao/music/A-SOUL原创曲——“无产者的间歇性痉挛”.mp4.flac',
+							cover: 'https://cdn.jsdelivr.net/gh/star-diana/assets@main/images/diana_logo.png'
+						}]
+					});
+				</script>
 			</footer>
-
 		</div>
+
 		<div class="bg-overlay"></div>
 		<!-- JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
@@ -104,5 +127,8 @@
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/juicer@0.6.15/build/juicer-min.js"></script>
 		<script src="./assets/js/main.js"></script>
+		<!---->
+
+		<!---->
 	</body>
 </html>
