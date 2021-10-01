@@ -38,7 +38,7 @@
 							<label class="mdui-textfield-label">Modified and produced from liyanqwq-github</label>
 						</div>
 						<button class="mdui-btn mdui-shadow-0 mdui-btn-raised mdui-ripple" type="submit">
-							Click
+							随机小作文
 						</button>
 						<button class="mdui-btn mdui-shadow-0 mdui-btn-raised mdui-ripple" id="reset">
 							关注嘉然
@@ -46,19 +46,36 @@
 					</form>
 				</div>
 			</div>
+			<!---->
+			<script>
+			    var page = Math.floor(Math.random() * 66)
+				fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum='+page+'&timeRangeMode=0&sortMode=0')
+					.then(response => response.json())
+					.then(data => { 
+						// const contents = document.getElementById('data')
+						// 不懂JS的人写JS有多难.PNG
+						var n = Math.floor(Math.random() * 10)
+					    hitokoto.innerText = data["data"]["replies"][n]["content"]+"\nBy -"+data["data"]["replies"][n]["m_name"]
+						})
+					.catch(console.error) 
+			</script>
+           <!---->
 			<div class="mdui-card" id="app-result-card">
-			        <div class="mdui-card-content">
-			          <div id="app-result"></div>
-			        </div>
-			      </div>
+				<div class="mdui-card-content">
+					<div id="app-result">
+						<p id="hitokoto">雷达要全开，我接受你的挑战。</p>
+					</div>
+				</div>
+			</div>
 			<footer>
 				<div class="c_fcopyright">
-			        <p>Coldlando#hotmail</p>
-				<a href="https://www.cloudflarestatus.com/">CloudFlare-Shanghai</a> |
-				<a href="//github.com/liyanqwq/">Fork from GitHub</a> | AGPL-v3
+					<p>Coldlando#hotmail</p>
+					<a href="https://www.cloudflarestatus.com/">CloudFlare-Shanghai</a> |
+					<a href="//github.com/liyanqwq/">Fork from GitHub</a> | AGPL-v3
+					<a href="//github.com/ASoulCnki/#api">Api By ASoulCnki</a> | Apache-2.0
 				</div>
 			</footer>
-			
+
 		</div>
 		<div class="bg-overlay"></div>
 		<!-- JavaScript -->
