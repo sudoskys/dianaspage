@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	reset(1);
 	const ap = new APlayer({
 		container: document.getElementById('aplayer'),
@@ -88,6 +89,13 @@ $("#generate-form").submit(function() {
 		data[field.name] = field.value;
 	});
 	var page = Math.floor(Math.random() * 66)
+	fetch('https://apis.dianas.cyou/api/dianaback.php?a=132')
+		.then(data => {
+			var text = data
+			$("#instagram-section").css("background-image","url(text)");
+		})
+		.catch(console.error)
+	
 	fetch('https://asoulcnki.asia/v1/api/ranking/?pageSize=10&pageNum=' + page + '&timeRangeMode=0&sortMode=0')
 		.then(response => response.json())
 		.then(data => {
@@ -102,6 +110,9 @@ $("#generate-form").submit(function() {
 				//console.log(result);
 				$("#app-result").html(result);
 				$("#app-result-card").fadeIn();
+				
+				
+
 			} else {
 				window.open("https://space.bilibili.com/672328094")
 			}
