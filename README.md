@@ -11,4 +11,6 @@
 <a href="//github.com/ASoulCnki/#api">Api By ASoulCnki</a> | Apache-2.0
 </div>
 
+https://dianas.cyou/
+
 #### I am so lazy that i dont want to write more about it.....
