@@ -1,5 +1,14 @@
 $(document).ready(function() {
-	
+$("#me").click(function() {
+	window.open("https://blog.dianas.cyou/")
+	console.log("me");
+	return false;
+});
+$("#you").click(function() {
+	window.open("https://www.bilibili.com/read/cv14532228")
+	console.log("you");
+	return false;
+});
 	reset(1);
 	const ap = new APlayer({
 		container: document.getElementById('aplayer'),
@@ -77,16 +86,7 @@ $("#reset").click(function() {
 	console.log("reset");
 	return false;
 });
-$("#me").click(function() {
-	window.open("https://blog.dianas.cyou/")
-	console.log("me");
-	return false;
-});
-$("#you").click(function() {
-	window.open("https://www.bilibili.com/read/cv14532228")
-	console.log("you");
-	return false;
-});
+
 var lim = 0
 
 
