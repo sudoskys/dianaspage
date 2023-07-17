@@ -12,18 +12,26 @@ $(document).ready(function() {
 		preload: 'none', //预加载（'none'：不预加载, 'metadata'：元数据, 'auto'：自动）
 		listFolded: false, //列表默认折叠，开启为true
 		theme: '#ee8fdf', //主题颜色
-		audio: [{
-             name: '杀死那个枝江人',           //歌曲名称
+		audio: [
+			{
+				name: '汕头游魂',           //歌曲名称
+				artist: '普信主义',       //歌曲作者
+				url: 'http://music.163.com/song/media/outer/url?id=2055494653.mp3',         //歌曲源文件地址
+				cover: 'http://p2.music.126.net/CQDbBjIudLltLpEKvEFFNQ==/109951168711797312.jpg?param=130y130',     //歌曲封面地址
+				//lrc:  'lrc.lrc',        //歌曲的歌词文件
+				theme: '#ffe4ff'        //主题颜色（优先）
+		}, {
+             name: '日冕',           //歌曲名称
              artist: '普信主义',       //歌曲作者
-             url: 'http://music.163.com/song/media/outer/url?id=1863202563.mp3',         //歌曲源文件地址
-             cover: 'http://p2.music.126.net/_-bselJyTtb8daHBedg7AA==/109951166130693310.jpg',     //歌曲封面地址
+             url: 'http://music.163.com/song/media/outer/url?id=1979249379.mp3',         //歌曲源文件地址
+             cover: 'http://p2.music.126.net/_-bselJyTtb8daHBedg7AA==/109951166130693310.jpg?param=130y130',     //歌曲封面地址
              //lrc:  'lrc.lrc',        //歌曲的歌词文件
              theme: '#ffe4ff'        //主题颜色（优先）
          }, {
-             name: '咚咚',           //歌曲名称
-             artist: 'PokerFaces / 林小暗',       //歌曲作者
-             url: 'http://music.163.com/song/media/outer/url?id=1875400941.mp3',         //歌曲源文件地址
-             cover: 'http://p1.music.126.net/cCgfXx1dQ7JVP31ROFqmlw==/109951166355038272.jpg',     //歌曲封面地址
+             name: '扣下扳机',           //歌曲名称
+             artist: '普信主义',       //歌曲作者
+             url: 'http://music.163.com/song/media/outer/url?id=2063051182.mp3',         //歌曲源文件地址
+             cover: 'http://p1.music.126.net/7n6OzULVtQSLZlAm4vg_2Q==/109951168619659849.jpg?param=130y130',     //歌曲封面地址
              //lrc:  'lrc.lrc',        //歌曲的歌词文件
              theme: '#ffe4ff'        //主题颜色（优先）
          },
@@ -40,15 +48,16 @@ function reset(init) {
 		$("#app-result-card").fadeOut();
 	}
 }
-$("#me").click(function() {
+
+$("#blog_click").click(function() {
     reset(0);
 	window.open("https://blog.dianas.cyou/")
 	console.log("me");
 	return false;
 });
-$("#reset").click(function() {
+$("#github_click").click(function() {
 	reset(0);
-	window.open("https://space.bilibili.com/280282")
+	window.open("https://github.com/sudoskys")
 	console.log("reset");
 	return false;
 });
