@@ -16,22 +16,22 @@ $(document).ready(function() {
 			{
 				name: '汕头游魂',           //歌曲名称
 				artist: '普信主义',       //歌曲作者
-				url: 'http://music.163.com/song/media/outer/url?id=2055494653.mp3',         //歌曲源文件地址
-				cover: 'http://p2.music.126.net/CQDbBjIudLltLpEKvEFFNQ==/109951168711797312.jpg?param=130y130',     //歌曲封面地址
+				url: 'https://music.163.com/song/media/outer/url?id=2055494653.mp3',         //歌曲源文件地址
+				cover: 'https://p2.music.126.net/CQDbBjIudLltLpEKvEFFNQ==/109951168711797312.jpg?param=130y130',     //歌曲封面地址
 				//lrc:  'lrc.lrc',        //歌曲的歌词文件
 				theme: '#ffe4ff'        //主题颜色（优先）
 		}, {
              name: '日冕',           //歌曲名称
              artist: '普信主义',       //歌曲作者
-             url: 'http://music.163.com/song/media/outer/url?id=1979249379.mp3',         //歌曲源文件地址
-             cover: 'http://p2.music.126.net/_-bselJyTtb8daHBedg7AA==/109951166130693310.jpg?param=130y130',     //歌曲封面地址
+             url: 'https://music.163.com/song/media/outer/url?id=1979249379.mp3',         //歌曲源文件地址
+             cover: 'https://p2.music.126.net/_-bselJyTtb8daHBedg7AA==/109951166130693310.jpg?param=130y130',     //歌曲封面地址
              //lrc:  'lrc.lrc',        //歌曲的歌词文件
              theme: '#ffe4ff'        //主题颜色（优先）
          }, {
              name: '扣下扳机',           //歌曲名称
              artist: '普信主义',       //歌曲作者
-             url: 'http://music.163.com/song/media/outer/url?id=2063051182.mp3',         //歌曲源文件地址
-             cover: 'http://p1.music.126.net/7n6OzULVtQSLZlAm4vg_2Q==/109951168619659849.jpg?param=130y130',     //歌曲封面地址
+             url: 'https://music.163.com/song/media/outer/url?id=2063051182.mp3',         //歌曲源文件地址
+             cover: 'https://p1.music.126.net/7n6OzULVtQSLZlAm4vg_2Q==/109951168619659849.jpg?param=130y130',     //歌曲封面地址
              //lrc:  'lrc.lrc',        //歌曲的歌词文件
              theme: '#ffe4ff'        //主题颜色（优先）
          },
